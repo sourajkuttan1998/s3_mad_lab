@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    tools:ignore="MissingClass">
+
+    <TextView
+        android:gravity="center"
+        android:id="@+id/textView"
+        android:layout_width="141dp"
+        android:layout_height="44dp"
+        android:layout_above="@+id/textView2"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="68dp"
+        android:layout_marginEnd="134dp"
+        android:layout_marginBottom="58dp"
+        android:text="50"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="102dp" />
+
+    <TextView
+        android:gravity="center"
+        android:id="@+id/textView2"
+        android:layout_width="138dp"
+        android:layout_height="45dp"
+        android:layout_above="@+id/textView3"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="140dp"
+        android:layout_marginBottom="40dp"
+        android:text="+"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="102dp"
+        tools:layout_editor_absoluteY="132dp" />
+
+    <TextView
+        android:gravity="center"
+        android:id="@+id/textView3"
+        android:layout_width="140dp"
+        android:layout_height="51dp"
+        android:layout_above="@+id/editTextNumber"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="105dp"
+
+        android:layout_marginEnd="127dp"
+        android:layout_marginBottom="44dp"
+        android:text="50"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <EditText
+        android:id="@+id/editTextNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_above="@+id/button"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="98dp"
+        android:layout_marginBottom="41dp"
+        android:ems="10"
+        android:hint="Enter Answer"
+        android:inputType="number"
+        android:minHeight="48dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="155dp"
+        android:layout_marginBottom="118dp"
+        android:text="Button"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</RelativeLayout>
